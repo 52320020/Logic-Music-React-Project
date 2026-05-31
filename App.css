@@ -1,0 +1,109 @@
+body {
+  background: linear-gradient(
+    135deg,
+    #eedfdf,
+    #eedfdf,
+    #eedfdf
+  );
+  color: white;
+  min-height: 100vh;
+}
+.navbar {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(10px);
+}
+.hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.song-card {
+  background: rgb(51, 0, 0);
+  border-radius: 20px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+}
+.song-card:hover {
+  transform: translateY(-8px);
+}
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+}
+.nav-link {
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: #f0c14b !important;
+}
+.contact-box {
+  max-width: 700px;
+  margin: auto;
+  background: rgba(255,255,255,0.08);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+.platform-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 15px;
+  color: white;
+  transition: 0.3s;
+}
+.spotify {
+  background: #1DB954;
+}
+.youtube {
+  background: #FF0000;
+}
+.platform-btn:hover {
+  transform: scale(1.05);
+  color: white;
+}
+.song-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.song-card h5 {
+  margin-top: 10px;
+  color: white;
+}
+.song-card h3 {
+  color: #f0c14b;
+  margin-top: 25px;
+}
+.song-card p {
+  line-height: 1.8;
+  color: #ddd;
+}
